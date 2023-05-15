@@ -1,0 +1,100 @@
+.ladinhozinho {
+    padding-left: 10px;
+}
+
+.descer {
+    margin-top: 5px;
+}
+
+.fotos {
+    border-radius: 40px;
+    padding: 10px;
+    transition: transform .2s;
+}
+
+.zoom {
+    transition: transform .2s;
+}
+
+.headerzoom:hover {
+    transform: scale(1.2);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.fotos:hover {
+    transform: scale(1.1);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.fundo {
+    background-color: #dee0e2;
+}
+
+.headerzito {
+    padding: 0px;
+    border-style: groove;
+    box-shadow: 7px 7px 3px 2px rgba(64, 45, 64, 1);
+}
+
+.separadinha {
+    margin-left: 5px;
+}
+
+.zoom {
+    transition: transform .2s;
+}
+
+.zoom:hover {
+    transform: scale(2.0);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.descendo {
+    margin-top: 15px;
+}
+
+.headerzitoSalgado {
+    padding-top: 1px;
+    border-style: groove;
+    box-shadow: 7px 7px 3px 2px rgb(226, 214, 182);
+}
+
+.preto {
+    color: black;
+    font-size: 18px;
+}
+
+.direitinha {
+    padding-top: 5px;
+    padding-left: 3px;
+}
+
+.headerNoticia {
+    padding: 0px;
+    border-style: ridge;
+    box-shadow: 7px 7px 3px 2px rgba(29, 163, 204, 0.192);
+}
+
+.centralizando {
+    margin: 1vw auto;
+    width: 90vw;
+}
+
+.textinhoEmpresa {
+    color: rgb(100, 100, 100);
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+@font-face {
+    font-family: fontzada;
+    src: url(roboto.ttf);
+}
+
+.fontezada {
+    font-family: fontzada;
+}
+
+.subiu {
+    margin-top: -30px;
+}

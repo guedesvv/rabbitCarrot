@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="google-site-verification" content="egE3hWPSf-x9CY5-Ne5ytQCSGyhr3gAjG3mYCH3V0E8" />
+    <script data-ad-client="ca-pub-9453351168925949" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <link rel="icon" href="imgs/icone_coelhito.png" />
+    <link rel="stylesheet" href="css/stilos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rabbit - Receitas de mãe</title>
+</head>
+
+<body bgcolor="grey">
+
+    <!-- HEADER -->
+
+    <script>
+        var href;
+
+        function myfunction() {
+            $('form').on('submit', function(e) {
+                e.preventDefault();
+                href = $('datalist option[value="' + $('input[list="receitas"]').val() + '"]').find('a').prop('href');
+                if (typeof href !== 'undefined')
+                    window.location.href = href;
+            });
+        }
+    </script>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand headerzoom" href="index.html">
+            <img src="imgs/coelho.png" width="150 " height="70 " class="d-inline-block align-top " alt=" ">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link .text-body" href="index.html">Home <span class="sr-only">(Página atual)</span></a>
+                </li>
+                <li class="nav-item">
+                    <div class="btn-group baixo">
+                        <button class="btn btn-dark btn-secondary btn-sm dropdown-toggle descer" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Estilos de receitas
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="docesIndex.html">Doces <img src="imgs/doce.svg" width=" 50 " height="30 " class="d-inline-block align-top " alt=" " /></a>
+                            <a class="dropdown-item" href="salgadasIndex.html">Salgados <img src="imgs/salgado.svg" width=" 50 " height="30 " class="d-inline-block align-top " alt=" " /></a>
+                            <hr>
+                            <a class="dropdown-item" href="diversas.html">Receitas Variadas <img src="imgs/receitas.svg" width=" 50 " height="30 " class="d-inline-block align-top " alt=" " /></a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <form class="form-inline direitinha">
+
+                <input class="form-control mr-sm-2" oninput="myfunction()" type="search" id="texto" list="receitas" placeholder="Receitas">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar receita</button>
+
+                <datalist id="receitas">
+
+                    <option value="Bolo de cenoura"><a href="receitaBoloCenoura.html"></a></option>
+                    <option value="Bolo de banana"><a href="receitaBoloBanana.html"></a></option>
+                    <option value="Bolo de pamonha"><a href="receitaBoloPamonha.html"></a></option>
+                    <option value="Pudim de leite condensado"><a href="receitaPudimLeiteCondensado.html"></a></option>
+                    <option value="Brigadeirão Branco"><a href="receitaBrigadeiraoBranco.html"></a></option>
+                    <option value="Queijadinha"><a href="receitaQueijadinha.html"></a></option>
+                    <option value="Bolo de fubá"><a href="receitasDoces/boloFuba.html"></a></option>
+                    <option value="Manjá"><a href="receitasDoces/manja.html"></a></option>
+                    <option value="Pudim de coco"><a href="receitasDoces/pudimDeCoco.html"></a></option>
+                    <option value="Fatias Húngaras"><a href="receitasDoces/fatiasHungaras.html"></a></option>
+                    <option value="Bolo de limão"><a href="receitasDoces/boloDeLimao.html"></a></option>
+                    <option value="Mousse de maracujá"><a href="receitasDoces/moouseDeMaracuja.html"></a></option>
+                    <option value="Salada de berinjela"><a href="receitasSalgadas/saladaBerinjela.html"></a></option>
+                    <option value="Cuscuz Paulista"><a href="receitasSalgadas/cuscuzPaulista.html"></a></option>
+                    <option value="Torta de frango"><a href="receitasSalgadas/tortaFrango.html"></a></option>
+                    <option value="Salada de maionese"><a href="receitasSalgadas/saladaMaionese.html"></a></option>
+                    <option value="Tomate recheado"><a href="receitasSalgadas/tomateRecheado.html"></a></option>
+                    <option value="Lasanha de presunto e queijo"><a href="receitasSalgadas/lasanhaPresuntoQueijo.html"></a></option>
+                    <option value="Banofe"><a href="diversasDois/banofe.html"></a></option>
+                    <option value="Bolo de Arroz"><a href="diversasDois/boloDeArroz.html"></a></option>
+                    <option value="Bolo de fuba Cremoso"><a href="diversasDois/boloFubaCremoso.html"></a></option>
+                    <option value="Gelado de Abacaxi"><a href="diversasDois/geladoAbacaxi.html"></a></option>
+                    <option value="Macarrão Pizza"><a href="diversasDois/macarraoPizza.html"></a></option>
+                    <option value="Torta de Ricota"><a href="diversasDois/tortaRicota.html"></a></option>
+                    <option value="Arroz doce"><a href="diversasUm/arrozDoce.html"></a></option>
+                    <option value="Bolo de coco"><a href="diversasUm/boloDeCoco.html"></a></option>
+                    <option value="Brigadeirão Preto"><a href="diversasUm/brigadeiraoPreto.html"></a></option>
+                    <option value="Curau"><a href="diversasUm/curau.html"></a></option>
+                    <option value="Gelatina Colorida"><a href="diversasUm/gelatinaColorida.html"></a></option>
+                    <option value="Pave de creme de confeiteiro"><a href="diversasUm/paveCremeConfeiteiro.html"></a></option>
+                </datalist>
+            </form>
+
+        </div>
+    </nav>
+
+    <br>
+    <br>
+
+
+
+    <div class="jumbotron descendo ">
+        <h1 class="display-4 ">Receitas do Rabbit <img src="imgs/colheres.svg " width="60 " height="60 " class="d-inline-block align-top " alt=" "></h1>
+        <p class="lead ">Aproveite nosso site e se divirta colocando nossas receitas em prática, temos de tudo para você.</p>
+        <hr class="my-4 ">
+        <p class="card-text "><small class="text-muted "><a class="btn btn btn-dark btn-sm " href="enviar_receita.html " role="button ">Envie aqui sua receita para nós!</a></small></p>
+    </div>
+
+    <div class="centralizando">
+        <div class="card text-center border-light subiu">
+            <div class="card-body">
+                <p>
+                    <h1 class="fontezada"><b>Bem-vindo</b> ao Rabbit Carrot</h1>
+                </p>
+                <br>
+                <p align="justify" class="textinhoEmpresa fontezada">
+                    Website de receitas, feito com muito amor e carinho, receitas exclusivas, testadas e funcionais, aproveite todo o nosso conteúdo de maneira gratuita, temos doces, salgados e receitas diversas, se divirta preparando todas elas, preparamos tudo para você
+                    ter a melhor experiência possível!
+
+                    </b>
+                </p>
+                <p class="fontezada">
+                    <b>Venha se aventurar nas nossas incríveis receitas!</b>
+                </p>
+                <hr>
+                <BR>
+                <div class="card-deck ">
+                    <div class="card border-light mb-3">
+                        <center>
+                            <img src="imgs/exclusive.svg" class="abaixandoImagens" width="100px" alt="Responsive image">
+                            <p></p>
+                            <b> Receitas exclusivas</b>
+                            <p></p>
+                            <p class="fontezada descricoes">Conteúdo exclusivo, de confiança, receitas que dão 100% certo.</p>
+                        </center>
+                    </div>
+                    <div class="card border-light mb-3">
+                        <center>
+                            <img src="imgs/qualidade.svg" class="abaixandoImagens" width="100px" alt="Responsive image">
+                            <p></p>
+                            <b> Conteúdo de qualidade</b>
+                            <p></p>
+                            <p class="fontezada descricoes">Receitas testadas na vida real, feitas por profissionais da área.</p>
+                        </center>
+                    </div>
+                    <div class="card border-light mb-3">
+                        <center>
+                            <img src="imgs/variedade.svg" class="abaixandoImagens" width="100px" alt="Responsive image">
+                            <p></p>
+                            <b>Variedade de receitas</b>
+                            <p></p>
+                            <p class="fontezada descricoes">Receitas doces e salgadas, temos a variedade que você precisa.</p>
+                        </center>
+                    </div>
+                    <div class="card border-light mb-3">
+                        <center>
+                            <img src="imgs/crescimento.svg" class="abaixandoImagens" width="100px" alt="Responsive image">
+                            <p></p>
+                            <b>Converse conosco</b>
+                            <p></p>
+                            <p class="fontezada descricoes">Somos um site em crescimento, contamos com seu apoio ♥.</p>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- HEADER -->
+
+        <!-- corpo  -->
+        <div class="card-deck">
+            <div class="card ">
+                <img src="imgs/bolo_cenoura.jpg " class="card-img-top fotos " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Bolo de Cenoura</h5>
+                    <p class="card-text ">Bolo de Cenoura com cobertura de chocolate, perfeito para sobremesa</p>
+                </div>
+                <ul class="list-group list-group-flush ">
+                    <li class="list-group-item "><img src="imgs/porcao.svg " width="70 " height="28 " class="d-inline-block align-top " alt=" "><b>Porção:</b> 10 a 12 pessoas</li>
+                    <li class="list-group-item "><img src="imgs/dinheiro.svg " width="70 " height="28 " class="d-inline-block align-top " alt=" "><b>tempo de preparo: </b> 40m </li>
+                    <li class="list-group-item "><img src="imgs/cozinhando.svg " width="70 " height="28 " class="d-inline-block align-top " alt=" "><b>Dificuldade preparo:</b> Fácil</li>
+                </ul>
+                <div class="card-body ">
+                    <center><a href="receitaBoloCenoura.html "><button type="button "  style="width: 18rem; " class="btn btn-outline-success aumentar ">Quero essa!</button></a>
+                    </center>
+                </div>
+                <div class="card-footer ">
+                    <small class="text-muted "><b>Autor:</b> Rabbit</small>
+                </div>
+            </div>
+            <div class="card ">
+                <img src="imgs/bolo_banana.jpg " class="card-img-top fotos " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Bolo de banana</h5>
+                    <p class="card-text ">Bolo de banana polvilhado com açúcar e canela, muito gostoso.</p>
+                </div>
+                <ul class="list-group list-group-flush ">
+                    <li class="list-group-item "><img src="imgs/porcao.svg " width="70 " height="28 " class="d-inline-block align-top " alt=" "><b>Porção:</b> 10 a 12 pessoas</li>
+                    <li class="list-group-item "><img src="imgs/dinheiro.svg " width="70 " height="28 " class="d-inline-block align-top " alt=" "><b>tempo de preparo: </b> 1 hora </li>
+                    <li class="list-group-item "><img src="imgs/cozinhando.svg " width="70 " height="28 " class="d-inline-block align-top " alt=" "><b>Dificuldade preparo:</b> Fácil</li>
+                </ul>
+                <div class="card-body ">
+                    <center><a href="receitaBoloBanana.html "><button type="button "  style="width: 18rem; " class="btn btn-outline-success aumentar ">Quero essa!</button></a></center>
+                </div>
+                <div class="card-footer ">
+                    <small class="text-muted "><b>Autor:</b> Rabbit</small>
+                </div>
+            </div>
+            <div class="card ">
+                <img src="imgs/bolo_pamonha.jpg " class="card-img-top fotos " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Bolo de pamonha</h5>
+                    <p class="card-text ">Bolo de pamonha feito com espiga de milho natural e leite de coco.</p>
+                </div>
+                <ul class="list-group list-group-flush ">
+                    <li class="list-group-item "><img src="imgs/porcao.svg " width="70 " height="28 " class="d-inline-block align-top " alt=" "><b>Porção:</b> 10 pessoas</li>
+                    <li class="list-group-item "><img src="imgs/dinheiro.svg " width="70 " height="28 " class="d-inline-block align-top " alt=" "><b>tempo de preparo: </b> 40m</li>
+                    <li class="list-group-item "><img src="imgs/cozinhando.svg " width="70 " height="28 " class="d-inline-block align-top " alt=" "><b>Dificuldade preparo:</b> Fácil</li>
+                </ul>
+                <div class="card-body ">
+                    <center><a href="receitaBoloPamonha.html "><button type="button "  style="width: 18rem; " class="btn btn-outline-success aumentar ">Quero essa!</button></a></center>
+                </div>
+                <div class="card-footer ">
+                    <small class="text-muted "><b>Autor:</b> Rabbit</small>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- corpo -->
+
+        <br>
+
+        <!-- corpo 2 -->
+
+        <div class="card-deck ">
+            <div class="card ">
+                <img src="imgs/pudim_leite_condensado.jpg " class="card-img-top fotos " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Pudim de leite condensado</h5>
+                    <p class="card-text ">Delicioso pudim de leite condensado, extremamente cremoso.</p>
+                </div>
+                <ul class="list-group list-group-flush ">
+                    <li class="list-group-item "><img src="imgs/porcao.svg " width="70 " height="28 " class="d-inline-block align-top " alt=" "><b>Porção:</b> 8 Fatias generosas</li>
+                    <li class="list-group-item "><img src="imgs/dinheiro.svg " width="70 " height="28 " class="d-inline-block align-top " alt=" "><b>tempo de preparo: </b> 1hr 40m</li>
+                    <li class="list-group-item "><img src="imgs/cozinhando.svg " width="70 " height="28 " class="d-inline-block align-top " alt=" "><b>Dificuldade preparo:</b> Fácil</li>
+                </ul>
+                <div class="card-body ">
+                    <center><a href="receitaPudimLeiteCondensado.html "><button type="button "  style="width: 18rem; " class="btn btn-outline-success aumentar ">Quero essa!</button></a></center>
+                </div>
+                <div class="card-footer ">
+                    <small class="text-muted "><b>Autor:</b> Rabbit</small>
+                </div>
+            </div>
+            <div class="card ">
+                <img src="imgs/brigadeirao_branco.jpg " class="card-img-top fotos " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Brigadeirão Branco</h5>
+                    <p class="card-text ">Delicioso brigadeirão coberto com chocolate branco.</p>
+                </div>
+                <ul class="list-group list-group-flush ">
+                    <li class="list-group-item "><img src="imgs/porcao.svg " width="70 " height="28 " class="d-inline-block align-top " alt=" "><b>Porção:</b> 8 Fatias generosas</li>
+                    <li class="list-group-item "><img src="imgs/dinheiro.svg " width="70 " height="28 " class="d-inline-block align-top " alt=" "><b>tempo de preparo: </b> 1hr 40m</li>
+                    <li class="list-group-item "><img src="imgs/cozinhando.svg " width="70 " height="28 " class="d-inline-block align-top " alt=" "><b>Dificuldade preparo:</b> Fácil</li>
+                </ul>
+                <div class="card-body ">
+                    <center><a href="receitaBrigadeiraoBranco.html "><button type="button "  style="width: 18rem; " class="btn btn-outline-success aumentar ">Quero essa!</button></a></center>
+                </div>
+                <div class="card-footer ">
+                    <small class="text-muted "><b>Autor:</b> Rabbit</small>
+                </div>
+            </div>
+            <div class="card ">
+                <img src="imgs/queijadinha.jpg " class="card-img-top fotos " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Queijadinha</h5>
+                    <p class="card-text ">Saborosa queijadinha, feita com coco fresco, super cremosa.</p>
+                </div>
+                <ul class="list-group list-group-flush ">
+                    <li class="list-group-item "><img src="imgs/porcao.svg " width="70 " height="28 " class="d-inline-block align-top " alt=" "><b>Porção:</b> 12 queijadinhas</li>
+                    <li class="list-group-item "><img src="imgs/dinheiro.svg " width="70 " height="28 " class="d-inline-block align-top " alt=" "><b>tempo de preparo: </b> 40m</li>
+                    <li class="list-group-item "><img src="imgs/cozinhando.svg " width="70 " height="28 " class="d-inline-block align-top " alt=" "><b>Dificuldade preparo:</b> Fácil</li>
+                </ul>
+                <div class="card-body ">
+                    <center><a href="receitaQueijadinha.html "><button type="button "  style="width: 18rem; " class="btn btn-outline-success aumentar ">Quero essa!</button></a></center>
+                </div>
+                <div class="card-footer ">
+                    <small class="text-muted "><b>Autor:</b> Rabbit</small>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="card text-center">
+            <div class="card-header">
+                <span>últimas notícias do nosso site</span>
+            </div>
+            <div class="card-body">
+                <h4 class="card-title">
+                    <i>Confira essas notícias incríveis que podem te ajudar na cozinha! <img src="imgs/noticia.svg" width="70" height="40" class="d-inline-block align-top " /></h4></i>
+            </div>
+        </div>
+
+        <br>
+
+
+        <div class="card-deck">
+
+            <div class="card">
+                <a href="noticias/pratosNatal.html"><img class="card-img-top fotos" src="imgs/noticia_natal.jpg" alt="Imagem de capa do card"></a>
+                <div class="card-body">
+                    <span>06/12/2020</span>
+                    <h5 class="card-title">Pratos doces incríveis para fazer no natal</h5>
+                    <a href="noticias/pratosNatal.html" class="btn btn-primary">Visitar</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <a href="noticias/dicasCozinha.html"><img class="card-img-top fotos" src="imgs/cozinha.jpg" alt="Imagem de capa do card"></a>
+                <div class="card-body">
+                    <span>06/12/2020</span>
+                    <h5 class="card-title">Está começando na cozinha? confira essas dicas que podem te ajudar!</h5>
+                    <a href="noticias/dicasCozinha.html" class="btn btn-primary">Visitar</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <a href="noticias/domingoFamilia.html"><img class="card-img-top fotos" src="imgs/familiaNoticia.jpg" alt="Imagem de capa do card"></a>
+                <div class="card-body">
+                    <span>06/12/2020</span>
+                    <h5 class="card-title">O que preparar no Domingo em família?</h5>
+                    <a href="noticias/domingoFamilia.html" class="btn btn-primary">Visitar</a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <br>
+
+
+</body>
+<!-- corpo 2 -->
+<!-- Footer -->
+<footer class="page-footer font-small blue fundo ">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 ">© 2020 Copyright:
+        <a href="# ">rabbitcarrot.com.br</a>
+    </div>
+    <!-- Copyright -->
+
+</footer>
+
+<!-- Footer -->
+
+
+</html>

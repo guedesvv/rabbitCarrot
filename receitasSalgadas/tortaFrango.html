@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <link rel="icon" href="../imgs/icone_coelhito.png" />
+    <link rel="stylesheet" href="../css/stilos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rabbit - Torta de frango</title>
+</head>
+
+<body bgcolor="grey">
+
+    <!-- HEADER -->
+
+    <script>
+        var href;
+
+        function myfunction() {
+            $('form').on('submit', function(e) {
+                e.preventDefault();
+                href = $('datalist option[value="' + $('input[list="receitas"]').val() + '"]').find('a').prop('href');
+                if (typeof href !== 'undefined')
+                    window.location.href = href;
+            });
+        }
+    </script>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand headerzoom" href="../index.html">
+            <img src="../imgs/coelho.png" width="150 " height="70 " class="d-inline-block align-top " alt=" ">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link .text-body" href="../index.html">Home <span class="sr-only">(Página atual)</span></a>
+                </li>
+                <li class="nav-item">
+                    <div class="btn-group baixo">
+                        <button class="btn btn-dark btn-secondary btn-sm dropdown-toggle descer" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Estilos de receitas
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="../docesIndex.html">Doces <img src="../imgs/doce.svg" width=" 50 " height="30 " class="d-inline-block align-top " alt=" " /></a>
+                            <a class="dropdown-item" href="../salgadasIndex.html">Salgados <img src="../imgs/salgado.svg" width=" 50 " height="30 " class="d-inline-block align-top " alt=" " /></a>
+                            <hr>
+                            <a class="dropdown-item" href="../diversas.html">Receitas Variadas <img src="../imgs/receitas.svg" width=" 50 " height="30 " class="d-inline-block align-top " alt=" " /></a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <form class="form-inline direitinha">
+
+                <input class="form-control mr-sm-2" oninput="myfunction()" type="search" id="texto" list="receitas" placeholder="Receitas">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar receita</button>
+
+                <datalist id="receitas">
+
+                    <option value="Bolo de cenoura"><a href="../receitaBoloCenoura.html"></a></option>
+                    <option value="Bolo de banana"><a href="../receitaBoloBanana.html"></a></option>
+                    <option value="Bolo de pamonha"><a href="../receitaBoloPamonha.html"></a></option>
+                    <option value="Pudim de leite condensado"><a href="../receitaPudimLeiteCondensado.html"></a></option>
+                    <option value="Brigadeirão Branco"><a href="../receitaBrigadeiraoBranco.html"></a></option>
+                    <option value="Queijadinha"><a href="../receitaQueijadinha.html"></a></option>
+                    <option value="Bolo de fubá"><a href="../receitasDoces/boloFuba.html"></a></option>
+                    <option value="Manjá"><a href="../receitasDoces/manja.html"></a></option>
+                    <option value="Pudim de coco"><a href="../receitasDoces/pudimDeCoco.html"></a></option>
+                    <option value="Fatias Húngaras"><a href="../receitasDoces/fatiasHungaras.html"></a></option>
+                    <option value="Bolo de limão"><a href="../receitasDoces/boloDeLimao.html"></a></option>
+                    <option value="Mousse de maracujá"><a href="../receitasDoces/moouseDeMaracuja.html"></a></option>
+                    <option value="Salada de berinjela"><a href="../receitasSalgadas/saladaBerinjela.html"></a></option>
+                    <option value="Cuscuz Paulista"><a href="cuscuzPaulista.html"></a></option>
+                    <option value="Torta de frango"><a href="tortaFrango.html"></a></option>
+                    <option value="Salada de maionese"><a href="saladaMaionese.html"></a></option>
+                    <option value="Tomate recheado"><a href="tomateRecheado.html"></a></option>
+                    <option value="Lasanha de presunto e queijo"><a href="lasanhaPresuntoQueijo.html"></a></option>
+                    <option value="Banofe"><a href="../diversasDois/banofe.html"></a></option>
+                    <option value="Bolo de Arroz"><a href="../diversasDois/boloDeArroz.html"></a></option>
+                    <option value="Bolo de fuba Cremoso"><a href="../diversasDois/boloFubaCremoso.html"></a></option>
+                    <option value="Gelado de Abacaxi"><a href="../diversasDois/geladoAbacaxi.html"></a></option>
+                    <option value="Macarrão Pizza"><a href="../diversasDois/macarraoPizza.html"></a></option>
+                    <option value="Torta de Ricota"><a href="../diversasDois/tortaRicota.html"></a></option>
+                    <option value="Arroz doce"><a href="../diversasUm/arrozDoce.html"></a></option>
+                    <option value="Bolo de coco"><a href="../diversasUm/boloDeCoco.html"></a></option>
+                    <option value="Brigadeirão Preto"><a href="../diversasUm/brigadeiraoPreto.html"></a></option>
+                    <option value="Curau"><a href="../diversasUm/curau.html"></a></option>
+                    <option value="Gelatina Colorida"><a href="../diversasUm/gelatinaColorida.html"></a></option>
+                    <option value="Pave de creme de confeiteiro"><a href="../diversasUm/paveCremeConfeiteiro.html"></a></option>
+                </datalist>
+            </form>
+        </div>
+    </nav>
+    <br>
+    <br>
+
+    <br>
+    <br>
+    <!-- HEADER -->
+
+    <div class="card mb-3 ">
+        <img class="img-fluid headerzito" src="../imgs/header_receitas.jpg" height="110" width="753" alt="Imagem de capa do card">
+        <div class="card-body">
+            <h3 class="card-title"><i>Torta de frango com requeijão</i></h3>
+            <p class="card-text">Modo de preparo, igredientes necessários e muito mais, divirta-se preparando essa receita.</p>
+            <p class="card-text"><small class="text-muted"><b>Autor:</b> Rabbit</small></p>
+        </div>
+
+    </div>
+
+
+    <div class="card-group separadinha">
+
+        <div class="card text-white bg-info mb-3 esquerdinha" style="max-width: 18rem;">
+            <div class="card-header"><b>Começando a receita</b></div>
+            <div class="card-body">
+                <h5 class="card-title">Igredientes da massa:</h5>
+                <p class="card-text"><b>></b> 3 Ovos</p>
+                <p class="card-text"><b>></b> 3 Xícaras de farinha de trigo</p>
+                <p class="card-text"><b>></b> 1 Colher e meia de sopa de fermento</p>
+                <p class="card-text"><b>></b> Meia xícara de óleo</p>
+                <p class="card-text"><b>></b> 3 Xícaras de leite</p>
+                <p class="card-text"><b>></b> 1 Colher de sopa rasa de café</p>
+            </div>
+        </div>
+
+        <div class="card text-white bg-info mb-3 esquerdinha" style="max-width: 18rem;">
+            <div class="card-header"><b>Começando a receita</b></div>
+            <div class="card-body">
+                <h5 class="card-title">Igredientes do recheio:</h5>
+                <p class="card-text"><b>></b> 300g De frango cozido e desfiado</p>
+                <p class="card-text"><b>></b> 250g De muçarela picada</p>
+                <p class="card-text"><b>></b> 2 Colheres de sopa de azeitona verde picada</p>
+                <p class="card-text"><b>></b> 1 Lata de milho</p>
+                <p class="card-text"><b>></b> 2 Tomates sem sementes picados</p>
+                <p class="card-text"><b>></b> 1 Cebola pequena picada</p>
+                <p class="card-text"><b>></b> Meia colher de sopa de orégano</p>
+                <p class="card-text"><b>></b> 50ml De azeite</p>
+                <p class="card-text"><b>></b> 300g de Requeijão cremoso</p>
+                <p class="card-text"><b>></b> Meia colher de sopa rasa de sal</p>
+            </div>
+        </div>
+
+
+        <div class="card text-white bg-secondary  mb-3 esquerdinha" style="max-width: 18rem;">
+            <div class="card-header"><b>Modo de preparo</b></div>
+            <div class="card-body">
+                <h5 class="card-title">Preparando o recheio</h5>
+                <p class="card-text"><b>1.</b> Numa tijela, misture todos os igredientes do recheio, menos o requeijão.</p>
+            </div>
+        </div>
+
+        <div class="card text-white bg-secondary  mb-3 esquerdinha" style="max-width: 18rem;">
+            <div class="card-header"><b>Modo de preparo</b></div>
+            <div class="card-body">
+                <h5 class="card-title">Preparando a massa</h5>
+                <p class="card-text"><b>1.</b> Reserve a farinha de trigo e o fermento numa tijela.</p>
+                <p class="card-text"><b>2.</b> Bata o restante dos igredientes da massa no liquidificador, por 2 minutos.</p>
+                <p class="card-text"><b>3.</b> Acrescente a farinha de trigo e o fermento no liquidificador e misture.</p>
+                <p class="card-text"><b>4.</b> Unte uma forma com manteiga e farinha de trigo e coloque a metade da massa espalhada pela forma.</p>
+                <p class="card-text"><b>5.</b> Coloque o recheio espalhado e em seguida coloque o requeijão cremoso por cima.</p>
+                <p class="card-text"><b>6.</b> Coloque o restante da massa e leve ao forno pré-aquecido em 180º por 40m.</p>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="card-group separadinha">
+
+        <div class="card text-white bg-success mb-3 esquerdinha" style="max-width: 18rem;">
+            <div class="card-header"><b>Parabéns!</b></div>
+            <div class="card-body">
+                <h5 class="card-title">Muito bem, agora é só aproveitar.</h5>
+                <p class="card-text">Pode comer sua receita salgada agora. Obrigado por utilizar o nosso site!</p>
+                <p class="card-text">Seu apoio para nos ajudar a crescer é importante!</p>
+                <center><a href="../enviar_feedback.html"><button type="button" style="width: 9rem;" class="btn btn btn-dark aumentar">Enviar feedback!</button></a><br><br>
+                    <p>
+                        <button type="button" id="botao" class="btn btn-outline-success"><img src="../imgs/coracaoFeedback.svg" width="50" height="45" class="d-inline-block align-top " alt=" "></button>
+
+                    </p>
+
+                    <script>
+                        const btn = document.querySelectorAll('button');
+
+                        const funcao = function() {
+
+                            alert("Seu feedback positivo foi enviado com sucesso, obrigado!")
+                            document.getElementById("botao").disabled = true;
+                            document.getElementById("botao2").disabled = true;
+
+
+                        }
+                        btn[4].addEventListener("click", funcao)
+                    </script>
+                </center>
+            </div>
+        </div>
+
+        <div class="card bg-light mb-3" style="max-width: 18rem;">
+            <div class="card-header"><b>Finalizado!</b></div>
+            <div class="card-body">
+                <h5 class="card-title">Resultado Final:</h5>
+                <div class="zoom">
+                    <img src="../imgs/tortaFrangoCatupiry.jpg" width="300" height="300" alt="..." class="img-thumbnail">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="card text-center">
+        <div class="card-header">
+            Outras Receitas
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Confira outras receitas do nosso site! <img src="../imgs/coracao.svg" width="90" height="30" class="d-inline-block align-top " /></h5>
+            <p class="card-text"><i>Nos envie sua receita e ajude o nosso site a crescer.</i></p>
+            <a class="btn btn btn-dark btn-sm" href="../enviar_receita.html" role="button">Envie aqui!</a>
+
+        </div>
+    </div>
+
+
+    <!--Outras receitas-->
+    <div class="centralizando">
+        <div class="card-deck">
+            <div class="card">
+                <img src="../imgs/saladaMaionese.jpg" class="card-img-top fotos" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Salada de maionese</h5>
+                    <p class="card-text">Salada de maionese, Saborosa.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><img src="../imgs/porcao.svg" width="70" height="28" class="d-inline-block align-top " alt=" "><b>Porção:</b> 15 pessoas</li>
+                    <li class="list-group-item"><img src="../imgs/dinheiro.svg" width="70" height="28" class="d-inline-block align-top " alt=" "><b>tempo de preparo: </b> 40m</li>
+                    <li class="list-group-item"><img src="../imgs/cozinhando.svg" width="70" height="28" class="d-inline-block align-top " alt=" "><b>Dificuldade preparo:</b> Fácil</li>
+                </ul>
+                <div class="card-body">
+                    <center><a href="saladaMaionese.html"><button type="button"  style="width: 18rem;" class="btn btn-outline-success aumentar">Quero essa!</button></a></center>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted"><b>Autor:</b> Rabbit</small>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../imgs/tomateRicota.jpg" class="card-img-top fotos" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Tomate recheado</h5>
+                    <p class="card-text">Tomate recheado com ricota.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><img src="../imgs/porcao.svg" width="70" height="28" class="d-inline-block align-top " alt=" "><b>Porção:</b> 8 tomates</li>
+                    <li class="list-group-item"><img src="../imgs/dinheiro.svg" width="70" height="28" class="d-inline-block align-top " alt=" "><b>tempo de preparo: </b> 40m</li>
+                    <li class="list-group-item"><img src="../imgs/cozinhando.svg" width="70" height="28" class="d-inline-block align-top " alt=" "><b>Dificuldade preparo:</b> Fácil</li>
+                </ul>
+                <div class="card-body">
+                    <center><a href="tomateRecheado.html"><button type="button"  style="width: 18rem;" class="btn btn-outline-success aumentar">Quero essa!</button></a></center>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted"><b>Autor:</b> Rabbit</small>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../imgs/lasanhaMolhoBranco.jpg" class="card-img-top fotos" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Lasanha de presunto e queijo</h5>
+                    <p class="card-text">Lasanha de presunto e queijo, com molho branco e vermelho.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><img src="../imgs/porcao.svg" width="70" height="28" class="d-inline-block align-top " alt=" "><b>Porção:</b> 12 pessoas</li>
+                    <li class="list-group-item"><img src="../imgs/dinheiro.svg" width="70" height="28" class="d-inline-block align-top " alt=" "><b>tempo de preparo: </b> 1hr 20m</li>
+                    <li class="list-group-item"><img src="../imgs/cozinhando.svg" width="70" height="28" class="d-inline-block align-top " alt=" "><b>Dificuldade preparo:</b> Médio</li>
+                </ul>
+                <div class="card-body">
+                    <center><a href="lasanhaPresuntoQueijo.html"><button type="button"  style="width: 18rem;" class="btn btn-outline-success aumentar">Quero essa!</button></a></center>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted"><b>Autor:</b> Rabbit</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<!-- Outras Receitas -->
+<!-- Footer -->
+<footer class="page-footer font-small blue fundo">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="#">rabbitcarrot.com.br</a>
+    </div>
+    <!-- Copyright -->
+
+</footer>
+
+<!-- Footer -->
+
+
+</html>
